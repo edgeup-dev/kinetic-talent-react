@@ -8,7 +8,7 @@ export default function DashboardLayout() {
   const isMessages = location.pathname === '/messages';
   return (
     <div className="min-h-screen bg-surface text-on-surface font-body">
-      <TopNavBar links={candidateNavLinks} />
+      <TopNavBar links={candidateNavLinks} showAuth={true} />
       <SideNavBar items={companySidebarItems} ctaLabel="Post New Role" ctaHref="/jobs" />
       <main className={isMessages ? 'ml-64 pt-16 h-screen overflow-hidden' : 'ml-64 pt-16 min-h-screen'}>
         <Outlet />

@@ -8,7 +8,7 @@ export default function AssessmentLayout() {
   return (
     <div className="min-h-screen bg-surface text-on-surface font-body">
       {isHub ? (
-        <TopNavBar links={candidateNavLinks} />
+        <TopNavBar links={candidateNavLinks} showAuth={true} />
       ) : (
         <nav className="fixed top-0 z-50 w-full h-16 flex justify-between items-center px-8 bg-surface-container-low/80 backdrop-blur-xl shadow-2xl shadow-black/30">
           <Link to="/" className="text-xl font-bold tracking-tighter text-primary">Kinetic Talent</Link>
